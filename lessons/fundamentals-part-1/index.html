@@ -9,7 +9,39 @@
 <body>
   <script>
     // Your JavaScript goes here!
-    console.log("Hello, World!")
-  </script>
+    // console.log("Hello, World!")
+
+    // Tasks from https://javascript.info/variables
+    // 1. Working with variables
+    let admin;
+    let name = "John";
+    admin = name;
+    // alert(admin);
+
+    // 2. Giving the right name
+    let ourPlanetName = "Earth";
+    let currentUserName = "John";
+
+    // 3. Uppercase const
+    const BIRTHDAY = '18.04.1982';
+    // const age = someCode(BIRTHDAY);
+
+    // Tasks from https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Math
+    const myInt = 5;
+    const myFloat = 6.667;
+    myInt;
+    myFloat;
+
+    // Useful Number methods
+    // To round numbers to 2 decimal places, .use toFixed(2)
+    const lotsOfDecimal = 1.766584958675746364;
+    const twoDecimalPlaces = lotsOfDecimal.toFixed(2);
+
+ 
+ </script>
 </body>
 </html>
+
+<!-- Notes -->
+<!-- For variables that are 'hard-coded' like color values (e.g. #F00), for readability & consistency, we should use const and name them in caps and underscores as such -> COLOR_RED. -->
+<!-- For variables that are not 'hard-coded', for readability & consistency, we use camelCase. -->
