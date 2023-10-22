@@ -43,8 +43,6 @@
                 list.appendChild(listItem);
             }
             }
-
-            createCalendar(31,'January');
         </pre>
     </div>
 
@@ -83,8 +81,51 @@
               html.style.color = textColor;
             }
         </pre>
+    </div>
+    <div>
+        <h1>4. Test your skills: Conditionals -
+            <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Test_your_skills:_Conditionals">https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Test_your_skills:_Conditionals</a></h1>
+
+        <h2>Conditionals 1</h2>
+            <pre>
+                let season = 'summer';
+                let response;
+
+                // Add your code here
+
+                switch(season) {
+                case 'spring':
+                    response = `it is ${season} season`;
+                    console.log(response);
+                    break;
+                case 'summer':
+                    response = `it is ${season} season`;
+                    console.log(response);
+                    break;
+                case 'autumn':
+                    response = `it is ${season} season`;
+                    console.log(response);
+                    break;
+                case 'winter':
+                    response = `it is ${season} season`;
+                    console.log(response);
+                    break;
+                default:
+                    console.log("Please input a valid season");
+                }
+
+                // Don't edit the code below here!
+
+                const section = document.querySelector('.preview');
+                section.innerHTML = ' ';
+                let para1 = document.createElement('p');
+                para1.textContent = response;
+                section.appendChild(para1);
+            </pre>
+        <h2>Conditionals 2</h2>
 
     </div>
+
 
 </body>
 </html>
