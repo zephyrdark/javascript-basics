@@ -47,5 +47,44 @@
             createCalendar(31,'January');
         </pre>
     </div>
+
+    <div>
+        <h1>3. More color choices -
+        <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals">https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals</a></h1>
+        <pre>
+            const select = document.querySelector('select');
+            const html = document.querySelector('.output');
+            
+            select.addEventListener('change', () => {
+              const choice = select.value;
+            
+              switch(choice) {
+                case "white":
+                  update("white","black");
+                  break;
+                case "black":
+                  update("black","white");
+                  break;
+                case "purple":
+                  update("purple","black");
+                  break;
+                case "yellow":
+                  update("yellow","black");
+                  break;
+                case "psychedelic":
+                  update("purple","yellow");
+                  break;
+              }
+            
+            });
+            
+            function update(bgColor, textColor) {
+              html.style.backgroundColor = bgColor;
+              html.style.color = textColor;
+            }
+        </pre>
+
+    </div>
+
 </body>
 </html>
