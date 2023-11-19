@@ -35,3 +35,14 @@ function sign() {
         alert("Error, please input numbers only");
     }
 }
+
+function browserCheck() {
+    let browser = prompt("What web browser are you using?");
+    if (browser === 'Edge') {
+        alert("You've got the Edge!")
+    } else if (browser === 'Chrome' || browser === 'Firefox' || browser === 'Safari' || browser === 'Opera') {
+        alert("Okay we support these browsers too")
+    } else {
+        alert("We hope this page looks ok!")
+    }
+}
